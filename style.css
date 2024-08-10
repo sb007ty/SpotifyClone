@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+}
+body {
+  height: 100vh;
+  background-color: beige;
+}
+.header {
+  background-color: black;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: whitesmoke;
+  /* background-color: black; */
+}
+
+.body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-body {
+  /* width: 50%; */
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 75%;
+  background-image: url("./bg.jpg");
+}
+
+.main-body-heading {
+  color: whitesmoke;
+}
+
+.main-body-song {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.main-body-song img {
+  border-radius: 50%;
+}
+/* i know i should use class name, but i wanted to practice pseudo calsses  */
+.main-body-song span:nth-child(2) {
+  width: 200px;
+}
+
+.main-body-song span:nth-child(3) {
+  margin-left: auto;
+}
+
+.main-body-song span:nth-child(4) {
+  cursor: pointer;
+}
+.main-body-song span:nth-child(5) {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+.song-play {
+  display: flex;
+  width: 50%;
+  gap: 10px;
+  /* justify-content: space-around; */
+  /* justify-content: center; */
+}
+.progress-bar {
+  border-radius: 5px;
+  height: 15px;
+  width: 50%;
+  cursor: pointer;
+}
+.song-name {
+  width: 350px;
+}
+.navigation {
+  /* margin-left: auto; */
+}
+
+.navigation span {
+  cursor: pointer;
+}
+.song-btn {
+  transition: transform 1s;
+}
+.song-btn:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
